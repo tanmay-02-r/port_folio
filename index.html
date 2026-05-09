@@ -478,6 +478,152 @@ border-radius: 4px;
 font-weight: 500;
 }
 
+/* =========================
+   CERTIFICATES SECTION
+========================= */
+
+#certificates {
+    padding: 80px 10%;
+    background: #0f172a;
+    color: white;
+}
+
+#certificates h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    position: relative;
+}
+
+#certificates h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #4f46e5;
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* Grid Layout */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Certificate Card */
+
+.project-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 18px;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(79, 70, 229, 0.35);
+}
+
+/* Header */
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 24px;
+}
+
+/* Tag */
+
+.project-tag {
+    background: #4f46e5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Title */
+
+.project-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* Description */
+
+.project-card p {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Skills / Tech */
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tech-stack span {
+    background: rgba(79, 70, 229, 0.18);
+    color: #a5b4fc;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Button */
+
+.certificate-actions a {
+    text-decoration: none;
+    background: #4f46e5;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.certificate-actions a:hover {
+    background: #3730a3;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    #certificates {
+        padding: 60px 6%;
+    }
+
+    #certificates h2 {
+        font-size: 32px;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+}
+ 
 /* CONTACT */
 
 #contact {
